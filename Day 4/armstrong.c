@@ -3,7 +3,8 @@
 
 int main()
 {
-    int n, n1, c = 0, sum = 0;
+    int n, n1, c = 0;
+    double sum = 0;
 
     printf("Enter a number.\n");
     scanf("%d", &n);
@@ -26,7 +27,7 @@ int main()
         n1 = n1 / 10;
     }
 
-    if (sum == n)
+    if ((int)sum == n)
         printf("\nArmstrong number.");
     else
         printf("\nNot an Armstrong number.");
